@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FocusedItem">
+        <item name="android:background">@drawable/focused_background</item> <!-- Фон для выделенного состояния -->
+    </style>
+
+    <style name="NormalItem">
+        <item name="android:background">@android:color/transparent</item> <!-- Обычный фон -->
+    </style>
+</resources>

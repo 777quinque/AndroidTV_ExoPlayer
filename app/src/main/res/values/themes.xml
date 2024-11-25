@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TomichekTV" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/tomik4</item>
+    </style>
+
+    <style name="Theme.TomichekTV" parent="Base.Theme.TomichekTV" />
+</resources>

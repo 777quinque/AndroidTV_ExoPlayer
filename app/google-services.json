@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "76381776031",
+    "project_id": "tomichek-tv",
+    "storage_bucket": "tomichek-tv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76381776031:android:695767a166699706a91aaa",
+        "android_client_info": {
+          "package_name": "ip.tomichek.tv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-VRT1zRhSA40oDIMhkh-fjHi2Z2Vbwx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

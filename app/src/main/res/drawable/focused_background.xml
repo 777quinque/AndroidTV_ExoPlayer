@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#754A3760" /> <!-- Цвет фона с затемнением (#55 - это уровень прозрачности) -->
+        </shape>
+    </item>
+    <item android:drawable="@android:color/transparent" />
+</selector>

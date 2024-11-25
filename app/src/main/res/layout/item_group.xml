@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#6029C6"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomichek TV"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#3E3C3C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerLayout">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3E3C3C"
+            android:columnCount="1"
+            android:rowCount="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+
+                <ImageView
+                    android:id="@+id/im1"
+                    android:layout_width="70dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/telekanaly_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/t1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/t1"
+
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:gravity="center|start"
+                    android:padding="8dp"
+                    android:text="ТЕЛЕКАНАЛЫ HD-FHD"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/im1"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_textview"
+                android:layout_height="56dp">
+
+                <ImageView
+                    android:id="@+id/im2"
+                    android:layout_width="70dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/telekanaly_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/t2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/t2"
+
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:gravity="center|start"
+                    android:padding="8dp"
+                    android:text="TV-PREMIUM"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/im2"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im3"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="ФИЛЬМЫ HD-FHD"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im3"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/l4"
+
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+
+            <ImageView
+                android:id="@+id/im4"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t4"
+
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="МУЛЬТФИЛЬМЫ HD-FHD"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im4"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im5"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t5"
+
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="СЕРИАЛЫ FHD"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im5"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im6"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t6"
+
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="UFC FHD"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im6"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l7"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im7"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t7"
+
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="ФОРСАЖ-ВСЕ ЧАСТИ"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im7"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l8"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im8"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t8"
+
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="АМЕРИКАНСКИЙ ПИРОГ - ВСЕ ЧАСТИ"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im8"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l9"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im9"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t9"
+
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="4K"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im9"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l10"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im10"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t10"
+
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Таджикистан TV"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im10"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/l11"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/background_textview">
+            <ImageView
+                android:id="@+id/im11"
+                android:layout_width="70dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:src="@drawable/telekanaly_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/t11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/t11"
+
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:gravity="center|start"
+                android:padding="8dp"
+                android:text="Иран TV"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/im11"
+                app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Фон с прозрачностью 0% -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- Тень -->
+    <item>
+        <shape>
+            <solid android:color="#01000000"/> <!-- Здесь 40 представляет собой уровень прозрачности (25%) -->
+        </shape>
+    </item>
+</layer-list>
