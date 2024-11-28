@@ -132,7 +132,7 @@ class Films_HD_FHD : AppCompatActivity() {
 
     private suspend fun loadPartialPlaylist(): List<Channel> = withContext(Dispatchers.IO) {
         val playlistUrl =
-            "https://dl.dropbox.com/scl/fi/5l92pftxkfku23vp2ruug/main.m3u8?rlkey=ut43c37g1llap4g3x6g8x44dl"
+            "https://dl.dropbox.com/scl/fi/an3blnniv7ic5i462s85t/Tomichek-TV-2022.m3u8?rlkey=fe3yj90rtsm3i4s1k0rqmhe5b"
         try {
 
             val connection = URL(playlistUrl).openConnection()

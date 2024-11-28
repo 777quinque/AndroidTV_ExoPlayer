@@ -8,12 +8,12 @@ plugins {
 
 android {
     namespace = "ip.tomichek.tv"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ip.tomichek.tv"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -43,8 +43,8 @@ android {
 }
 
 dependencies {
-    implementation ("com.google.android.exoplayer:exoplayer-core:2.7.1k1")
-    implementation ("com.google.android.exoplayer:exoplayer-ui:2.7.1k1")
+    implementation("com.github.anilbeesetti.nextlib:nextlib-media3ext:0.8.2")
+    implementation("com.github.anilbeesetti.nextlib:nextlib-mediainfo:0.8.2")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation ("androidx.core:core-ktx:1.6.0")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
@@ -64,8 +64,9 @@ dependencies {
     implementation("androidx.leanback:leanback:1.2.0-alpha04")
     implementation("com.google.firebase:firebase-database-ktx:20.3.0")
     implementation("com.google.firebase:firebase-storage-ktx:20.3.0")
-    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
-    implementation("com.google.android.exoplayer:exoplayer-hls:2.19.1")
+    implementation("androidx.media3:media3-exoplayer:1.5.0")
+    implementation("androidx.media3:media3-exoplayer-hls:1.5.0")
+    implementation("androidx.media3:media3-ui:1.5.0")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

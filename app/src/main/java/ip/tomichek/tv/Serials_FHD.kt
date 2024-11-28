@@ -132,7 +132,7 @@ class Serials_FHD : AppCompatActivity() {
 
     private suspend fun loadPartialPlaylist(): List<Channel> = withContext(Dispatchers.IO) {
         val playlistUrl =
-            "https://dl.dropbox.com/scl/fi/5l92pftxkfku23vp2ruug/main.m3u8?rlkey=ut43c37g1llap4g3x6g8x44dl"
+            "https://dl.dropboxusercontent.com/s/ayh2q1exq3joeqk4kld0l/doc.m3u8?rlkey=vxvv6dn5v2j1j0jnq48dsib4s&st=rz80inxd&dl=0/seria.m3u?dl=1"
         try {
 
             val connection = URL(playlistUrl).openConnection()
